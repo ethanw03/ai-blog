@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Trending from './(home)/Trending';
+import Tech from './(home)/Tech';
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <Trending />
       <div className='gap-10 mb-5 md:flex'>
         <div className='basis-3/4'>
-          {/* <Tech/> */}
+          <Tech />
           {/* <Travel/> */}
           {/* <Other/> */}
           <div className='hidden md:block'>{/* <Subscribe/> */}</div>
