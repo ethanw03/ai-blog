@@ -36,15 +36,11 @@ const Trending = (props: Props) => {
           Lorem vitae ut augue auctor faucibus eget eget ut libero.
         </p>
       </div>
-      <div className='flex justify-between gap-3 my-3'>
-        <TrendingCard className='basis-1/2 bg-wh-500 h-96'></TrendingCard>
-        <TrendingCard className='flex flex-col gap-3 basis-1/2 h-96'>
-          <TrendingCard className='basis-1/2 bg-wh-500'></TrendingCard>
-          <TrendingCard className='flex gap-3 basis-1/2'>
-            <TrendingCard className='basis-1/2 bg-wh-500'></TrendingCard>
-            <TrendingCard className='basis-1/2 bg-wh-500'></TrendingCard>
-          </TrendingCard>
-        </TrendingCard>
+      <div className='sm:grid gap-5 grid-cols-4 grid-rows-2 sm:h-[600px] my-3'>
+        <TrendingCard className='col-span-2 row-span-2 bg-wh-500' />
+        <TrendingCard className='col-span-2 row-span-1 bg-wh-500' />
+        <TrendingCard className='col-span-1 row-span-1 bg-wh-500' />
+        <TrendingCard className='col-span-1 row-span-1 bg-wh-500' />
       </div>
     </section>
   );
