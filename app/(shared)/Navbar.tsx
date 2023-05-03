@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import SocialLinks from './SocialLinks';
 
 type Props = {};
 
@@ -7,7 +8,9 @@ const Navbar = (props: Props) => {
   return (
     <header className='mb-5'>
       <nav className='flex items-center justify-between w-full px-10 py-4 bg-wh-900 text-wh-10'>
-        <div className='hidden sm:block'>social link</div>
+        <div className='hidden sm:block'>
+          <SocialLinks />
+        </div>
         <div className='flex items-center justify-between gap-10'>
           <Link href='/'>Home</Link>
           <Link href='/'>Trending</Link>
