@@ -15,8 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={openSans.className}>{children}</body>
+    <html
+      className={openSans.className}
+      lang='en'
+    >
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
