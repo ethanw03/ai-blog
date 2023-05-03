@@ -1,5 +1,6 @@
 import './globals.css';
 
+import Navbar from './(shared)/Navbar';
 import { Open_Sans } from 'next/font/google';
 
 const openSans = Open_Sans({ subsets: ['latin'] });

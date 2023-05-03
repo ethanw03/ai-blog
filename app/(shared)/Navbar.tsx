@@ -6,7 +6,7 @@ type Props = {};
 const Navbar = (props: Props) => {
   return (
     <header className='mb-5'>
-      <nav className='flex items-center justify-between w-full px-10 bg-wh-900 text-wh-10'>
+      <nav className='flex items-center justify-between w-full px-10 py-4 bg-wh-900 text-wh-10'>
         <div className='hidden sm:block'>social link</div>
         <div className='flex items-center justify-between gap-10'>
           <Link href='/'>Home</Link>
@@ -24,8 +24,11 @@ const Navbar = (props: Props) => {
             Blog dedicated towards AI and Machine Learning. We are the future.
           </p>
         </div>
-        <div className='relative w-auto h-32 basis-full'></div>
+        <div className='relative w-auto h-32 basis-full bg-wh-500'>
+          Image right here
+        </div>
       </div>
+      <hr className='mx-10 border-1' />
     </header>
   );
 };
