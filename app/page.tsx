@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Trending from './(home)/Trending';
 import Tech from './(home)/Tech';
+import Travel from './(home)/Travel';
+import Other from './(shared)/Other';
+import Subscribe from './(shared)/Subscribe';
 
 export default function Home() {
   return (
@@ -9,9 +12,11 @@ export default function Home() {
       <div className='gap-10 mb-5 md:flex'>
         <div className='basis-3/4'>
           <Tech />
-          {/* <Travel/> */}
-          {/* <Other/> */}
-          <div className='hidden md:block'>{/* <Subscribe/> */}</div>
+          <Travel />
+          <Other />
+          <div className='hidden md:block'>
+            <Subscribe />
+          </div>
         </div>
         <div className='basis-1/4'>{/* <Sidebar/> */}</div>
       </div>
