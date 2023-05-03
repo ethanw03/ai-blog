@@ -15,8 +15,13 @@ const Trending = (props: Props) => {
       </div>
       <div className='flex justify-between gap-3 my-3'>
         <div className='basis-1/2 bg-wh-500 h-96'></div>
-        <div className='flex flex-col gap-3 basis-1/2 bg-wh-500 h-96'></div>
-        <div className=''></div>
+        <div className='flex flex-col gap-3 basis-1/2 h-96'>
+          <div className='basis-1/2 bg-wh-500'></div>
+          <div className='flex gap-3 basis-1/2'>
+            <div className='basis-1/2 bg-wh-500'></div>
+            <div className='basis-1/2 bg-wh-500'></div>
+          </div>
+        </div>
       </div>
     </section>
   );
