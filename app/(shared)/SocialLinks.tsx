@@ -19,8 +19,8 @@ const SocialLinks = ({ isDark = false }: Props) => {
         rel='noreferrer'
       >
         <Image
-          className={`${isDark ? 'brightness-0' : ''}hover:opacity-50`}
-          alt='Twitter'
+          className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
+          alt='twitter'
           src={Twitter}
           width={20}
           height={20}
@@ -32,8 +32,8 @@ const SocialLinks = ({ isDark = false }: Props) => {
         rel='noreferrer'
       >
         <Image
-          className={`${isDark ? 'brightness-0' : ''}hover:opacity-50`}
-          alt='Facebook'
+          className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
+          alt='facebook'
           src={Facebook}
           width={20}
           height={20}
@@ -45,8 +45,8 @@ const SocialLinks = ({ isDark = false }: Props) => {
         rel='noreferrer'
       >
         <Image
-          className={`${isDark ? 'brightness-0' : ''}hover:opacity-50`}
-          alt='Instagram'
+          className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
+          alt='instagram'
           src={Instagram}
           width={20}
           height={20}
@@ -58,21 +58,21 @@ const SocialLinks = ({ isDark = false }: Props) => {
         rel='noreferrer'
       >
         <Image
-          className={`${isDark ? 'brightness-0' : ''}hover:opacity-50`}
-          alt='Google'
+          className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
+          alt='google'
           src={Google}
           width={20}
           height={20}
         />
       </a>
       <a
-        href='https://Discord.com'
+        href='https://discord.com'
         target='_blank'
         rel='noreferrer'
       >
         <Image
-          className={`${isDark ? 'brightness-0' : ''}hover:opacity-50`}
-          alt='Discord'
+          className={`${isDark ? 'brightness-0' : ''} hover:opacity-50`}
+          alt='discord'
           src={Discord}
           width={20}
           height={20}
