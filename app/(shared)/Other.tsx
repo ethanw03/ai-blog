@@ -5,7 +5,7 @@ type Props = {};
 
 const Other = (props: Props) => {
   return (
-    <section>
+    <section className='pt-4 mb-16'>
       <hr className='border-1 ' />
       {/* Header */}
       <p className='my-8 text-2xl font-bold'>Other Trending Posts</p>
