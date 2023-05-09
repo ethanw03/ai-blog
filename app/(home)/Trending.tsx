@@ -12,7 +12,7 @@ const TrendingCard = ({ className, post }: TrendingCardProps) => {
   return (
     <Link
       className={`${className} sm:mt-0 sm:h-auto relative mt-7 block w-full h-96 hover:opacity-70`}
-      href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
+      href={`${process.env.NEXT_PUBLIC_URL}/post/${post.id}`}
     >
       <div className='relative z-0 w-full h-full'>
         <Image
