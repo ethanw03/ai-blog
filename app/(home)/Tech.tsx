@@ -7,6 +7,7 @@ type Props = {
 };
 
 const Tech = ({ techPosts }: Props) => {
+  console.log('techPosts:', techPosts);
   return (
     <section>
       <hr className='border-1 ' />
