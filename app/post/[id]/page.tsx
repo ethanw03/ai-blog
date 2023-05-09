@@ -8,6 +8,8 @@ type Props = {
   params: { id: string };
 };
 
+export const revalidate = 60;
+
 const getPost = async (id: string) => {
   const post: PostType | null = await prisma.post.findUnique({
     where: { id },
@@ -30,18 +32,12 @@ const getPost = async (id: string) => {
 const Post = async ({ params }: Props) => {
   const { id } = params;
   const post: FormattedPost | null = await getPost(id);
-
-  if (!post) {
-    return <div>Post Not Found</div>;
-  }
+  console.log('posts: ', post);
 
   return (
     <main className='px-10 leading-7'>
       <div className='gap-10 mb-5 md:flex'>
-        <div className='basis-3/4'>
-          <Content />
-          <div className='hidden md:block'></div>
-        </div>
+        <div className='basis-3/4'>{/* <Content post={post} /> */}</div>
         <div className='basis-1/4'>
           <Sidebar />
         </div>

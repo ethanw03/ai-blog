@@ -7,7 +7,6 @@ type Props = {
 };
 
 const Travel = ({ travelPosts }: Props) => {
-  console.log('travelPosts:', travelPosts);
   return (
     <section className='mt-10'>
       <hr className='border-1' />
