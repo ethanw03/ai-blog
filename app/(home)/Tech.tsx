@@ -7,7 +7,6 @@ type Props = {
 };
 
 const Tech = ({ techPosts }: Props) => {
-  console.log('techPosts:', techPosts);
   return (
     <section>
       <hr className='border-1 ' />
@@ -22,29 +21,29 @@ const Tech = ({ techPosts }: Props) => {
       <div className='grid-cols-2 grid-rows-3 my-5 sm:grid gap-x-8 gap-y-8'>
         {/* Card Large  */}
         <Card
-          className='col-span-1 row-span-3 bg-wh-500'
+          className='col-span-1 row-span-3'
           imageHeight='h-96'
-          isLongForm
           post={techPosts[0]}
+          isLongForm
         />
         {/* Card Small */}
         <Card
-          className='flex justify-between col-span-1 row-span-1 gap-3 mt-10 bg-wh-500 sm:mt-0'
+          className='flex justify-between col-span-1 row-span-1 gap-3 mt-10 sm:mt-0'
           imageHeight='h-48'
-          isSmallCard
           post={techPosts[1]}
+          isSmallCard
         />
         <Card
-          className='flex justify-between col-span-1 row-span-1 gap-3 mt-10 bg-wh-500 sm:mt-0'
+          className='flex justify-between col-span-1 row-span-1 gap-3 mt-10 sm:mt-0'
           imageHeight='h-48'
-          isSmallCard
           post={techPosts[2]}
+          isSmallCard
         />
         <Card
-          className='flex justify-between col-span-1 row-span-1 gap-3 mt-10 bg-wh-500 sm:mt-0'
+          className='flex justify-between col-span-1 row-span-1 gap-3 mt-10 sm:mt-0'
           imageHeight='h-48'
-          isSmallCard
           post={techPosts[3]}
+          isSmallCard
         />
       </div>
     </section>
