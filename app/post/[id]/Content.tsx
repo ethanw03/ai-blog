@@ -3,6 +3,8 @@
 import { Editor, EditorContent, useEditor } from '@tiptap/react';
 import React, { useState } from 'react';
 
+import Article from './Article';
+import CategoryAndEdit from './CategoryAndEdit';
 import { FormattedPost } from '@/app/types';
 import Image from 'next/image';
 import SocialLinks from '@/app/(shared)/SocialLinks';
@@ -93,6 +95,18 @@ const Content = ({ post }: Props) => {
       <h5 className='text-wh-300'>{`Home > ${post.category} > ${post.title}`}</h5>
 
       {/* CATEGORY AND EDIT */}
+      <CategoryAndEdit
+        isEditable={isEditable}
+        handleIsEditable={handleIsEditable}
+        title={title}
+        setTitle={setTitle}
+        tempTitle={tempTitle}
+        setTempTitle={setTempTitle}
+        tempContent={tempContent}
+        setTempContent={setTempContent}
+        editor={editor}
+        post={post}
+      />
 
       <form onSubmit={handleSubmit}>
         {/* HEADER */}
@@ -133,6 +147,13 @@ const Content = ({ post }: Props) => {
         </div>
 
         {/* ARTICLE */}
+        <Article
+          contentError={contentError}
+          editor={editor}
+          isEditable={isEditable}
+          setContent={setContent}
+          title={title}
+        />
 
         {/* SUBMIT BUTTON */}
         {isEditable && (
